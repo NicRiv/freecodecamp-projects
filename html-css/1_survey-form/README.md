@@ -1,6 +1,6 @@
 # Survey form
 
-Primer proyecto del curso html-css para freecodecamp
+Primer proyecto del curso html-css para freeCodeCamp
 
 ## Inicio
 
