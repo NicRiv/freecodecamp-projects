@@ -17,15 +17,19 @@ function palindrome(str) {
  * Tests cases
  */
 
-console.log(`Passed: ${palindrome("eye") === true}
-Passed: ${palindrome("_eye") === true}
-Passed: ${palindrome("race car") === true}
-Passed: ${palindrome("not a palindrome") === false}
-Passed: ${palindrome("A man, a plan, a canal. Panama") === true}
-Passed: ${palindrome("never odd or even") === true}
-Passed: ${palindrome("nope") === false}
-Passed: ${palindrome("almostomla") === false}
-Passed: ${palindrome("My age is 0, 0 si ega ym.") === true}
-Passed: ${palindrome("1 eye for of 1 eye.") === false}
-Passed: ${palindrome("0_0 (: /- :) 0-0") === true}
-Passed: ${palindrome("five|_/|four") === false}`);
+const fnCases = require('fn-cases')
+
+fnCases([
+  [palindrome("eye"), true],
+  [palindrome("_eye"), true],
+  [palindrome("race car"), true],
+  [palindrome("not a palindrome"), false],
+  [palindrome("A man, a plan, a canal. Panama"), true],
+  [palindrome("never odd or even"), true],
+  [palindrome("nope"), false],
+  [palindrome("almostomla"), false],
+  [palindrome("My age is 0, 0 si ega ym."), true],
+  [palindrome("1 eye for of 1 eye."), false],
+  [palindrome("0_0 (: /- :) 0-0"), true],
+  [palindrome("five|_/|four"), false]
+])

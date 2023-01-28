@@ -18,9 +18,11 @@ function rot13(str) {
  * Tests cases
  */
 
-console.log(`
-    Passed: ${rot13("SERR PBQR PNZC") === 'FREE CODE CAMP'}
-    Passed: ${rot13("SERR CVMMN!") === 'FREE PIZZA!'}
-    Passed: ${rot13("SERR YBIR?") === 'FREE LOVE?'}
-    Passed: ${rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.") === 'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.'}
-`)
+const fnCases = require('fn-cases')
+
+fnCases([
+    [rot13("SERR PBQR PNZC"), 'FREE CODE CAMP'],
+    [rot13("SERR CVMMN!"), 'FREE PIZZA!'],
+    [rot13("SERR YBIR?"), 'FREE LOVE?'],
+    [rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT."), 'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.']
+])
